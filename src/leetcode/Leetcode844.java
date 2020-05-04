@@ -16,11 +16,11 @@ public class Leetcode844 {
         String str1 = sc.next();
         String str2 = sc.next();
         sc.close();
-        Solution sol = new Solution();
-        System.out.println(sol.backspaceCompare(str1, str2));
+        SolutionLeetcode844 solution = new SolutionLeetcode844();
+        System.out.println(solution.backspaceCompare(str1, str2));
     }
 }
-class Solution {
+class SolutionLeetcode844 {
     public boolean backspaceCompare(String S, String T) {
         return build(S).equals(build(T));
     }
