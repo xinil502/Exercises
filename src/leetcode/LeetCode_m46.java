@@ -2,16 +2,16 @@ package leetcode;
 
 import java.util.Scanner;
 
-public class Leetcodem46 {
+public class LeetCode_m46 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         sc.close();
-        Solutionleecodem46 solution = new Solutionleecodem46();
+        Solution_m46 solution = new Solution_m46();
         System.out.println(solution.translateNum(num));
     }
 }
-class Solutionleecodem46 {
+class Solution_m46 {
     public int translateNum(int num) {
         int sum=0, lang = (num+"").length(); // 求出数字长度
         int numm = (int) Math.pow(10, lang-2);

@@ -10,17 +10,17 @@ package leetcode;
  */
 import java.util.Scanner;
 
-public class Leetcode844 {
+public class LeetCode_844 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str1 = sc.next();
         String str2 = sc.next();
         sc.close();
-        SolutionLeetcode844 solution = new SolutionLeetcode844();
+        Solution_844 solution = new Solution_844();
         System.out.println(solution.backspaceCompare(str1, str2));
     }
 }
-class SolutionLeetcode844 {
+class Solution_844 {
     public boolean backspaceCompare(String S, String T) {
         return build(S).equals(build(T));
     }
