@@ -4,37 +4,15 @@ import java.util.Scanner;
 
 public class LeetCode_572 {
     public static void main(String[] args) {
-        LeetCode_572 leet = new LeetCode_572();
         Scanner sc = new Scanner(System.in);
         Solution_572_2 sol = new Solution_572_2();
 
         TreeNode roots = new TreeNode(sc.nextInt());
-        leet.CreatTree(roots);
+        roots.CreatTree();
         TreeNode roott = new TreeNode(sc.nextInt());
-        leet.CreatTree(roott);
+        roott.CreatTree();
 
         System.out.println(sol.isSubtree(roots, roott));
-    }
-
-    void CreatTree(TreeNode root) {
-        /*先序创建，
-        想输入数据时输入：“1 value”
-        想输入null时输入：“0”
-
-         */
-        Scanner sca = new Scanner(System.in);
-        int judge = sca.nextInt(), val;
-        if(judge == 1){
-            val = sca.nextInt();
-            root.left = new TreeNode(val);
-            CreatTree(root.left);
-        }
-        judge = sca.nextInt();
-        if(judge == 1){
-            val = sca.nextInt();
-            root.right  = new TreeNode(val);
-            CreatTree(root.right);
-        }
     }
 }
 
@@ -98,13 +76,5 @@ class Solution_572_2{ //递归分治  4ms  40Mb
             return true;
         }
         return false;
-    }
-}
-class TreeNode{ //树
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x){
-        val = x;
     }
 }
