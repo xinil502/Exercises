@@ -20,7 +20,7 @@ class Solution_153 {
     public int findMin(int[] nums) {
         int l=0, r=nums.length-1;
         while(l<r){
-            if(nums[(l+r)/2] <= nums[r]){
+            if(nums[(l+r)/2] <= nums[r]){ //与题目154不同，mid始终靠左，不会与右端的数相同。
                 r = (l+r)/2;
             }else{
                 l = (l+r)/2+1;
