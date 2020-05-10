@@ -3,15 +3,15 @@ package leetcode;
 import java.util.Scanner;
 
 public class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x){
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
+    public TreeNode(int x){
         val = x;
         this.right = null;
         this.left = null;
     }
-    void CreatTree() {
+    public void CreatTree() {
         /*先序创建，
         想输入数据时输入：“1 value”
         想输入null时输入：“0”
