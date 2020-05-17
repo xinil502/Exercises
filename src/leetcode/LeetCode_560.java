@@ -11,12 +11,12 @@ public class LeetCode_560 {
             nums[i] = sc.nextInt();
         }
         int k = sc.nextInt();
-        Solution sol = new Solution();
+        Solution_560 sol = new Solution_560();
         System.out.println(sol.subarraySum(nums,k));
     }
 }
 
-class Solution {
+class Solution_560 {
     public int subarraySum(int[] nums, int k) {
         if(nums.length == 0){
             return 0;
