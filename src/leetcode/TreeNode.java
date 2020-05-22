@@ -6,12 +6,19 @@ public class TreeNode {
     public int val;
     public TreeNode left;
     public TreeNode right;
+
+    public TreeNode() {
+        val = 0;
+        this.right = null;
+        this.left = null;
+    }
     public TreeNode(int x){
         val = x;
         this.right = null;
         this.left = null;
     }
-    public void CreatTree() {
+
+    public void CreatTree() {  //创建二叉树
         /*先序创建，
         想输入数据时输入：“1 value”
         想输入null时输入：“0”
@@ -28,6 +35,34 @@ public class TreeNode {
             val = sca.nextInt();
             this.right = new TreeNode(val);
             this.right.CreatTree();
+        }
+    }
+
+    public void print(int i) {  //输出二叉树
+        if (i == 1) { //前序输出
+            System.out.print(val + " ");
+            if (left != null) {
+                left.print(i);
+            }
+            if (right != null) {
+                right.print(i);
+            }
+        } else if (i == 2) { //中序输出
+            if (left != null) {
+                left.print(i);
+            }
+            System.out.print(val + " ");
+            if (right != null) {
+                right.print(i);
+            }
+        } else if (i == 3) { //后序输出
+            if (left != null) {
+                left.print(i);
+            }
+            if (right != null) {
+                right.print(i);
+            }
+            System.out.print(val + " ");
         }
     }
 }
