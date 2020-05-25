@@ -19,6 +19,15 @@ public class ListNode {
         }
     }
 
+    public void BuildList(int len) {
+        if (len == 1) {
+            next = null;
+        } else {
+            next = new ListNode(-1);
+            next.BuildList(len - 1);
+        }
+    }
+
     public void print(ListNode head){
         if(head == null){
             return;
