@@ -5,6 +5,11 @@ import java.util.Scanner;
 public class ListNode {
     public int val;
     public ListNode next;
+
+    public ListNode() {
+        val = 0;
+        next = null;
+    }
     public ListNode(int x){
         val = x;
         next = null;
@@ -23,7 +28,7 @@ public class ListNode {
         if (len == 1) {
             next = null;
         } else {
-            next = new ListNode(-1);
+            next = new ListNode(0);
             next.BuildList(len - 1);
         }
     }
