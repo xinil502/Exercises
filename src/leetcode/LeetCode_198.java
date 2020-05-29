@@ -18,6 +18,10 @@ public class LeetCode_198 {
 }
 
 class Solution_198 {
+    /*
+     * 要么隔一家一偷，要么隔两家一偷，不可能会隔三家
+     * 所以dp[i] = (dp[i - 2] > dp[i - 3] ? dp[i - 2] : dp[i - 3]) + nums[i]
+     */
     public int rob(int[] nums) {
         if (nums.length == 0) {
             return 0;
