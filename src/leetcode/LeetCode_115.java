@@ -15,9 +15,13 @@ public class LeetCode_115 {
 
             Solution_115 sol = new Solution_115();
             System.out.println(sol.numDistinct(s, t));
+            
+            br.close();
+            isr.close();
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
 }
 
