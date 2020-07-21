@@ -7,11 +7,12 @@ public class LeetCode_m46 {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
         sc.close();
-        Solution_m46 solution = new Solution_m46();
+        Solution_j46 solution = new Solution_j46();
         System.out.println(solution.translateNum(num));
     }
 }
-class Solution_m46 {
+
+class Solution_j46 {
     public int translateNum(int num) {
         int sum=0, lang = (num+"").length(); // 求出数字长度
         int numm = (int) Math.pow(10, lang-2);
