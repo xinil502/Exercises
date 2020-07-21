@@ -3,7 +3,7 @@ package leetcode;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class LeetCode_m29 {
+public class LeetCode_j29 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -16,12 +16,12 @@ public class LeetCode_m29 {
             }
         }
 
-        Solution_m29_1 sol = new Solution_m29_1();
+        Solution_j29_1 sol = new Solution_j29_1();
         System.out.println(Arrays.toString(sol.spiralOrder(matrix)));
     }
 }
 
-class Solution_m29_1 { //按元素个数循环输出
+class Solution_j29_1 { //按元素个数循环输出
     public int[] spiralOrder(int[][] matrix) {
         if (matrix.length == 0 || matrix[0].length == 0) {
             return new int[0];
@@ -50,7 +50,7 @@ class Solution_m29_1 { //按元素个数循环输出
 }
 
 
-class Solution_m29_2 { //四重循环转方向，如遇撞墙(无法前进，直接跳出)
+class Solution_j29_2 { //四重循环转方向，如遇撞墙(无法前进，直接跳出)
     public int[] spiralOrder(int[][] matrix) {
         if (matrix.length == 0 || matrix[0].length == 0) {
             return new int[0];
