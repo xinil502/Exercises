@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.Scanner;
 
-public class LeetCode_m17 {
+public class LeetCode_m17_13 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -16,13 +16,13 @@ public class LeetCode_m17 {
         String ss = sc.nextLine();
 
 
-        Solution_m17 sol = new Solution_m17();
+        Solution_m17_13 sol = new Solution_m17_13();
         System.out.println(sol.respace(str, ss));
     }
 }
 
 
-class Solution_m17 {
+class Solution_m17_13 {
     public int respace(String[] dictionary, String sentence) {
         int[] num = new int[sentence.length() + 1];
         int i = 0;
