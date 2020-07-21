@@ -12,10 +12,17 @@ public class TreeNode {
         this.right = null;
         this.left = null;
     }
-    public TreeNode(int x){
-        val = x;
+
+    public TreeNode(int val) {
+        this.val = val;
         this.right = null;
         this.left = null;
+    }
+
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
     }
 
     public void CreatTree() {  //创建二叉树
@@ -43,24 +50,36 @@ public class TreeNode {
             System.out.print(val + " ");
             if (left != null) {
                 left.print(i);
+            } else {
+                System.out.print("null ");
             }
             if (right != null) {
                 right.print(i);
+            } else {
+                System.out.print("null ");
             }
         } else if (i == 2) { //中序输出
             if (left != null) {
                 left.print(i);
+            } else {
+                System.out.print("null ");
             }
             System.out.print(val + " ");
             if (right != null) {
                 right.print(i);
+            } else {
+                System.out.print("null ");
             }
         } else if (i == 3) { //后序输出
             if (left != null) {
                 left.print(i);
+            } else {
+                System.out.print("null ");
             }
             if (right != null) {
                 right.print(i);
+            } else {
+                System.out.print("null ");
             }
             System.out.print(val + " ");
         }
