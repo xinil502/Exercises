@@ -2,7 +2,7 @@ package leetcode;
 
 import java.util.Scanner;
 
-public class LeetCode_m46 {
+public class LeetCode_j46 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
