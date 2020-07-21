@@ -3,9 +3,9 @@ package leetcode;
 import java.util.*;
 
 /**
- * LeetCode_1036.跳跃游戏Ⅲ
+ * LeetCode_1306.跳跃游戏Ⅲ
  */
-public class LeetCode_1206 {
+public class LeetCode_1306 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
