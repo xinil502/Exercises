@@ -55,13 +55,13 @@ public class TreeNode {
         if (judge == 1) {
             val = sca.nextInt();
             this.left = new TreeNode(val);
-            this.left.CreatTree();
+            this.left.creatTree();
         }
         judge = sca.nextInt();
         if (judge == 1) {
             val = sca.nextInt();
             this.right = new TreeNode(val);
-            this.right.CreatTree();
+            this.right.creatTree();
         }
     }
 
