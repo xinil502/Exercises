@@ -16,21 +16,42 @@ public class ListNode {
     }
 
     public void BuildList(){
-        Scanner sc = new Scanner(System.in);
-        int judge = sc.nextInt();
-        if(judge == 1){
-            next = new ListNode(sc.nextInt());
-            next.BuildList();
+        Scanner scanner = new Scanner(System.in);
+        int judge = scanner.nextInt();
+        ListNode node = this;
+        this.val = scanner.nextInt();
+        while (1 == scanner.nextInt()) {
+            node.next = new ListNode(scanner.nextInt());
+            node = node.next;
         }
+        scanner.close();
+    }
+
+    public static ListNode createList() {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        if (0 == n) {
+            scanner.close();
+            return null;
+        }
+        ListNode head, p;
+        head = p = new ListNode();
+        while (0 != n--) {
+            p.next = new ListNode(scanner.nextInt());
+        }
+        scanner.close();
+        return head.next;
     }
 
     public void BuildList(int len) {
+        Scanner scanner = new Scanner(System.in);
         if (len == 1) {
             next = null;
         } else {
-            next = new ListNode(0);
+            next = new ListNode(scanner.nextInt());
             next.BuildList(len - 1);
         }
+        scanner.close();
     }
 
     public void print(ListNode head){
