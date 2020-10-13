@@ -8,9 +8,9 @@ public class LeetCode_572 {
         Solution_572_2 sol = new Solution_572_2();
 
         TreeNode roots = new TreeNode(sc.nextInt());
-        roots.CreatTree();
+        roots.createTree();
         TreeNode roott = new TreeNode(sc.nextInt());
-        roott.CreatTree();
+        roott.createTree();
 
         System.out.println(sol.isSubtree(roots, roott));
     }

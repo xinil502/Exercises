@@ -21,7 +21,7 @@ public class LeetCode_98 {
         Scanner sc = new Scanner(System.in);
         int val = sc.nextInt();
         TreeNode root = new TreeNode(val);
-        root.CreatTree();
+        root.createTree();
 
         Solution_98 sol = new Solution_98();
         System.out.println(sol.isValidBST(root));

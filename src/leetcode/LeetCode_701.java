@@ -9,7 +9,7 @@ public class LeetCode_701 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TreeNode root = new TreeNode(sc.nextInt());
-        root.creatTree();
+        root.createTree();
 
         Solution_701 sol = new Solution_701();
         root = sol.insertIntoBST(root, sc.nextInt());

@@ -9,7 +9,7 @@ public class LeetCode_404 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TreeNode root = new TreeNode(sc.nextInt());
-        root.creatTree();
+        root.createTree();
 
         Solution_404 sol = new Solution_404();
         System.out.println(sol.sumOfLeftLeaves(root));

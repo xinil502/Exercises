@@ -7,7 +7,7 @@ public class LeetCode_337 {
         Scanner sc = new Scanner(System.in);
         TreeNode root = new TreeNode();
         root.val = sc.nextInt();
-        root.CreatTree();
+        root.createTree();
 
         Solution_337_1 sol = new Solution_337_1();
         System.out.println(sol.rob(root));

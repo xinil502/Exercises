@@ -6,7 +6,7 @@ public class LeetCode_112 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TreeNode root = new TreeNode(sc.nextInt());
-        root.CreatTree();
+        root.createTree();
 
         int k = sc.nextInt();
         Solution_112 sol = new Solution_112();

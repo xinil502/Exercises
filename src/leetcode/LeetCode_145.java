@@ -11,7 +11,7 @@ public class LeetCode_145 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TreeNode root = new TreeNode(sc.nextInt());
-        root.creatTree();
+        root.createTree();
 
         Solution_145 sol = new Solution_145();
         List<Integer> list = sol.postorderTraversal(root);

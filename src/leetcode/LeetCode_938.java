@@ -9,7 +9,7 @@ public class LeetCode_938 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TreeNode root = new TreeNode(sc.nextInt());
-        root.creatTree();
+        root.createTree();
 
         Solution_938 sol = new Solution_938();
         System.out.println(sol.rangeSumBST(root, sc.nextInt(), sc.nextInt()));

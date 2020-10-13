@@ -9,7 +9,7 @@ public class LeetCode_114 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TreeNode root = new TreeNode(sc.nextInt());
-        root.CreatTree();
+        root.createTree();
 
         Solution_114 sol = new Solution_114();
         sol.flatten(root);

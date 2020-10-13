@@ -9,7 +9,7 @@ public class LeetCode_968 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TreeNode root = new TreeNode(sc.nextInt());
-        root.creatTree();
+        root.createTree();
 
         Solution_968 sol = new Solution_968();
         System.out.println(sol.minCameraCover(root));

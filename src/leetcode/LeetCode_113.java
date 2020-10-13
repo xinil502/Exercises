@@ -12,7 +12,7 @@ public class LeetCode_113 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TreeNode root = new TreeNode(sc.nextInt());
-        root.creatTree();
+        root.createTree();
 
         Solution_113 sol = new Solution_113();
         List<List<Integer>> list = sol.pathSum(root, sc.nextInt());

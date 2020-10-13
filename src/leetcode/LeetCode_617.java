@@ -9,9 +9,9 @@ public class LeetCode_617 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TreeNode root1 = new TreeNode(sc.nextInt());
-        root1.creatTree();
+        root1.createTree();
         TreeNode root2 = new TreeNode(sc.nextInt());
-        root2.creatTree();
+        root2.createTree();
 
         Solution_617 sol = new Solution_617();
         sol.mergeTrees(root1, root2).print(1);

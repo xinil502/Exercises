@@ -8,7 +8,7 @@ public class LeetCode_236 {
         TreeNode root = new TreeNode(sc.nextInt());
         TreeNode pTree = new TreeNode(sc.nextInt());
         TreeNode qTree = new TreeNode(sc.nextInt());
-        root.CreatTree();
+        root.createTree();
 
 
         Solution_236_1 sol = new Solution_236_1();

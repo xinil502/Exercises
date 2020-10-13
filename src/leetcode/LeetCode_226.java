@@ -9,7 +9,7 @@ public class LeetCode_226 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TreeNode root = new TreeNode(sc.nextInt());
-        root.CreatTree();
+        root.createTree();
         Solution_226 sol = new Solution_226();
         root = sol.invertTree(root);
         root.print(1);

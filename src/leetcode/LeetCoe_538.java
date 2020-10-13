@@ -6,7 +6,7 @@ public class LeetCoe_538 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TreeNode root = new TreeNode(sc.nextInt());
-        root.creatTree();
+        root.createTree();
 
         Solution_538 sol = new Solution_538();
         sol.convertBST(root).print(1);

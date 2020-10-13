@@ -10,7 +10,7 @@ public class LeetCode_637 {
         Scanner sc = new Scanner(System.in);
         int roo = sc.nextInt();
         TreeNode root = new TreeNode(roo);
-        root.CreatTree();
+        root.createTree();
 
         Solution_637 sol = new Solution_637();
         List<Double> list = sol.averageOfLevels(root);

@@ -25,7 +25,7 @@ public class TreeNode {
         this.right = right;
     }
 
-    public void CreatTree() {  //创建二叉树
+    public void createTree() {  //创建二叉树
         /*先序创建，
         想输入数据时输入：“1 value”
         想输入null时输入：“0”
@@ -35,33 +35,13 @@ public class TreeNode {
         if (judge == 1) {
             val = sca.nextInt();
             this.left = new TreeNode(val);
-            this.left.CreatTree();
+            this.left.createTree();
         }
         judge = sca.nextInt();
         if (judge == 1) {
             val = sca.nextInt();
             this.right = new TreeNode(val);
-            this.right.CreatTree();
-        }
-    }
-
-    public void creatTree() {  //创建二叉树
-        /*先序创建，
-        想输入数据时输入：“1 value”
-        想输入null时输入：“0”
-         */
-        Scanner sca = new Scanner(System.in);
-        int judge = sca.nextInt(), val;
-        if (judge == 1) {
-            val = sca.nextInt();
-            this.left = new TreeNode(val);
-            this.left.creatTree();
-        }
-        judge = sca.nextInt();
-        if (judge == 1) {
-            val = sca.nextInt();
-            this.right = new TreeNode(val);
-            this.right.creatTree();
+            this.right.createTree();
         }
     }
 

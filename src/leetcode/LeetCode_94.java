@@ -9,7 +9,7 @@ public class LeetCode_94 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TreeNode root = new TreeNode(sc.nextInt());
-        root.CreatTree();
+        root.createTree();
 
         Solution_94 sol = new Solution_94();
         List<Integer> list = sol.inorderTraversal(root);

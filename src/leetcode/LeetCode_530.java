@@ -9,7 +9,7 @@ public class LeetCode_530 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         TreeNode root = new TreeNode(scanner.nextInt());
-        root.creatTree();
+        root.createTree();
 
         Solution_530 sol = new Solution_530();
         System.out.println(sol.getMinimumDifference(root));

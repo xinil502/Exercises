@@ -9,7 +9,7 @@ public class LeetCode_235 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TreeNode root = new TreeNode(sc.nextInt());
-        root.creatTree();
+        root.createTree();
 
         TreeNode p = new TreeNode(sc.nextInt());
         TreeNode q = new TreeNode(sc.nextInt());

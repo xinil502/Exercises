@@ -8,9 +8,9 @@ public class LeetCode_100 {
         Solution_100 sol = new Solution_100();
 
         TreeNode rootp = new TreeNode(sc.nextInt());
-        rootp.CreatTree();
+        rootp.createTree();
         TreeNode rootq = new TreeNode(sc.nextInt());
-        rootq.CreatTree();
+        rootq.createTree();
 
         System.out.println(sol.isSameTree(rootp, rootq));
     }
