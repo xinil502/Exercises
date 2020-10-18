@@ -24,7 +24,6 @@ public class ListNode {
             node.next = new ListNode(scanner.nextInt());
             node = node.next;
         }
-        scanner.close();
     }
 
     public static ListNode createList() {
@@ -39,19 +38,18 @@ public class ListNode {
         while (0 != n--) {
             p.next = new ListNode(scanner.nextInt());
         }
-        scanner.close();
         return head.next;
     }
 
     public void BuildList(int len) {
         Scanner scanner = new Scanner(System.in);
-        if (len == 1) {
-            next = null;
-        } else {
-            next = new ListNode(scanner.nextInt());
-            next.BuildList(len - 1);
+        val = scanner.nextInt();
+        ListNode p = this;
+        while (len != 1) {
+            p.next = new ListNode(scanner.nextInt());
+            p = p.next;
+            --len;
         }
-        scanner.close();
     }
 
     public void print(ListNode head){
