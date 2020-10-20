@@ -37,6 +37,7 @@ public class ListNode {
         head = p = new ListNode();
         while (0 != n--) {
             p.next = new ListNode(scanner.nextInt());
+            p = p.next;
         }
         return head.next;
     }
@@ -61,5 +62,16 @@ public class ListNode {
             head = head.next;
             System.out.print(" " + head.val);
         }
+    }
+
+    @Override
+    public String toString() {
+        ListNode p = this;
+        StringBuffer sb = new StringBuffer();
+        while (p != null) {
+            sb.append(p.val);
+            p = p.next;
+        }
+        return sb.toString();
     }
 }
