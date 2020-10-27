@@ -45,6 +45,12 @@ public class TreeNode {
         }
     }
 
+    public static TreeNode create() {  //创建二叉树
+        TreeNode root = new TreeNode();
+        root.createTree();
+        return root;
+    }
+
     public void print(int i) {  //输出二叉树
         if (i == 1) { //前序输出
             System.out.print(val + " ");
