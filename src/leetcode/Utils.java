@@ -13,4 +13,8 @@ public class Utils {
         scanner.close();
         return nums;
     }
+
+    static ListNode createList() {
+        return ListNode.createList();
+    }
 }
