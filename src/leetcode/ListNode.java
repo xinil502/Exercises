@@ -64,6 +64,15 @@ public class ListNode {
         }
     }
 
+    public void print() {
+        ListNode p = this;
+        System.out.print(p.val);
+        while (p.next != null) {
+            p = p.next;
+            System.out.print(" " + p.val);
+        }
+    }
+
     @Override
     public String toString() {
         ListNode p = this;
