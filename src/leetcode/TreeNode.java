@@ -46,7 +46,7 @@ public class TreeNode {
     }
 
     public static TreeNode create() {  //创建二叉树
-        TreeNode root = new TreeNode();
+        TreeNode root = new TreeNode(new Scanner(System.in).nextInt());
         root.createTree();
         return root;
     }
