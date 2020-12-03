@@ -10,12 +10,11 @@ public class LeetCode_204 {
         public int countPrimes(int n) {
             int sum = 0;
             boolean[] isPrime = new boolean[n];
-            Arrays.fill(isPrime, true);
             for (int i = 2; i < n; ++i) {
-                if (isPrime[i]) {
+                if (!isPrime[i]) {
                     ++sum;
                     for (int j = 2 * i; j < n; j += i) {
-                        isPrime[j] = false;
+                        isPrime[j] = true;
                     }
                 }
             }
