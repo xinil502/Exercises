@@ -3,11 +3,11 @@ package leetcode;
 import java.util.Scanner;
 
 public class Utils {
-    static TreeNode createTree() {
+    public static TreeNode createTree() {
         return TreeNode.create();
     }
 
-    static int[] createArray() {   //创建并初始化一维数组
+    public static int[] createArray() {   //创建并初始化一维数组
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         int[] nums = new int[n];
@@ -17,11 +17,11 @@ public class Utils {
         return nums;
     }
 
-    static ListNode createList() {  //创建并初始化链表
+    public static ListNode createList() {  //创建并初始化链表
         return ListNode.createList();
     }
 
-    static int[][] createDoubleDimensionalArray() {  //创建并初始化二维数组
+    public static int[][] createDoubleDimensionalArray() {  //创建并初始化二维数组
         Scanner scanner = new Scanner(System.in);
         int m, n;
         m = scanner.nextInt();
