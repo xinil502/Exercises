@@ -2,7 +2,10 @@ package leetcode;
 
 import java.util.Scanner;
 
-public class LeetCoe_538 {
+/**
+ * 538. 把二叉搜索树转换为累加树
+ */
+public class LeetCode_538 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         TreeNode root = new TreeNode(sc.nextInt());
