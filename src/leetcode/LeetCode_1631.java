@@ -1,7 +1,8 @@
 package leetcode;
 
+import util.DisjointSet;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 
@@ -18,7 +19,7 @@ public class LeetCode_1631 {
             int row = heights.length;
             int columns = heights[0].length;
             int kkkkkk = row * columns - 1;
-            Disjoint disjoint = new Disjoint(row * columns);
+            DisjointSet disjoint = new DisjointSet(row * columns);
             List<int[]> list = new ArrayList<>();
             for (int i = 0; i < row; ++i) {
                 for (int j = 0; j < columns; ++j) {
@@ -44,38 +45,4 @@ public class LeetCode_1631 {
             return 0;
         }
     }
-
-    class Disjoint {
-        int[] f;
-        int[] rank;
-
-        public Disjoint(int n) {
-            f = new int[n];
-            rank = new int[n];
-            for (int i = 0; i < n; ++i) {
-                f[i] = i;
-            }
-            Arrays.fill(rank, 1);
-        }
-
-        int find(int x) {
-            return f[x] == x ? x : find(f[x]);
-        }
-
-        void union(int a, int b) {
-            int x = find(a);
-            int y = find(b);
-            if (x == y) {
-                return;
-            }
-            if (rank[x] > rank[y]) {
-                x ^= y;
-                y ^= x;
-                x ^= y;
-            }
-            f[x] = y;
-            rank[y] = Math.max(rank[y], rank[x] + 1);
-        }
-    }
-
 }
