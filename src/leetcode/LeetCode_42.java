@@ -32,7 +32,7 @@ public class LeetCode_42 {
     /**
      * 双指针。
      * 维护四个变量：  两端的指针，以及两端已遍历的最大值。
-     * 移动位置低指针，来计算接的雨水。
+     * 移动位置低的指针，来计算接的雨水。
      */
     class Solution_2 {
         public int trap(int[] height) {
