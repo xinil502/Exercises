@@ -1,52 +1,32 @@
 package leetcode;
 
-import java.util.Scanner;
-
 /**
  * LeetCode_938.二叉搜索树的范围和
  */
 public class LeetCode_938 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        TreeNode root = new TreeNode(sc.nextInt());
-        root.createTree();
+    class Solution {
+        int low, high, sum = 0;
 
-        Solution_938 sol = new Solution_938();
-        System.out.println(sol.rangeSumBST(root, sc.nextInt(), sc.nextInt()));
-    }
-}
-
-class Solution_938 {
-    int sum;
-    int l, r;
-
-    public int rangeSumBST(TreeNode root, int L, int R) {
-        sum = 0;
-        l = L;
-        r = R;
-        dfs(root);
-        return sum;
-    }
-
-    void dfs(TreeNode root) {
-        if (null == root) {
-            return;
+        public int rangeSumBST(TreeNode root, int low, int high) {
+            this.low = low;
+            this.high = high;
+            dfs(root);
+            return sum;
         }
-        if (root.val <= l) {
-            if (root.val == l) {
-                sum += l;
+
+        void dfs(TreeNode root) {
+            if (root == null) {
+                return;
             }
-            dfs(root.right);
-            return;
-        } else if (root.val >= r) {
-            if (root.val == r) {
-                sum += r;
+            if (low <= root.val && root.val <= high) {
+                sum += root.val;
             }
-            dfs(root.left);
-            return;
+            if (low <= root.val) {
+                dfs(root.left);
+            }
+            if (root.val <= high) {
+                dfs(root.right);
+            }
         }
-        sum += root.val;
-        dfs(root.right);
-        dfs(root.left);
     }
 }
