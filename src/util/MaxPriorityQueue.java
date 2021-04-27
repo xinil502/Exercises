@@ -1,16 +1,22 @@
 package util;
 
+
+import java.util.Comparator;
+
 /**
  * @Author: Xinil
  * @Date: 2021/4/17 14:05
  */
-public class MaxPriorityQueue<T extends Comparable<T>> {
+public class MaxPriorityQueue<T> {
     private T[] items;
 
     private int N;
 
-    public MaxPriorityQueue(int size) {
-        items = (T[]) new Comparable[size + 1];
+    private Comparator e;
+
+    public MaxPriorityQueue(int size, Comparator<? super T> e) {
+        items = (T[]) new Object[size + 1];
+        this.e = e;
         N = 0;
     }
 
@@ -60,7 +66,7 @@ public class MaxPriorityQueue<T extends Comparable<T>> {
      * 判断堆中索引i处的元素是否小于索引j处的元素(与维护的优先队列相反，便于上浮下沉时进行判断)
      */
     private boolean less(int i, int j) {
-        return items[i].compareTo(items[j]) < 0;
+        return e.compare(items[i], items[j]) < 0;
     }
 
     /**
