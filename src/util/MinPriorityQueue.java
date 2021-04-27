@@ -36,9 +36,9 @@ public class MinPriorityQueue<T extends Comparable<T>> {
     }
 
     /**
-     * 删除队列中最大的元素,并返回这个最大元素
+     * 删除队列中最小的元素,并返回这个最小元素
      */
-    public T delMax() {
+    public T delMin() {
         T max = items[1];
         exch(1, N);
         items[N] = null;
